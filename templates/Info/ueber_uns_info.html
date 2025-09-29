@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns | Engineering Solutions</title>
+
+  <!-- CSS mit grüner Farbpalette -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ueber_uns_info.css') }}"> 
+
+  <!-- Font Awesome (Icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <!-- Dein Logo -->
+          <img src="/api/placeholder/50/50" alt="Logo">
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">3D Druck</a>
+            <a href="#">SmartLab</a>
+            <a href="#" class="active">Über uns</a>
+          </div>
+        </div>
+        <div class="search-container">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Über uns</h1>
+      <p>Erfahre mehr über unsere Vision, unser Team und unsere Leidenschaft für innovative Fertigungstechnologien. 
+      </p>
+    </p>
+      Mehmet Saygin,
+        Luca Danner,
+        Fabian Venier,
+        Furkan Odabas.
+</p>
+      <a href="#" class="hero-btn">Mehr erfahren</a>
+    </div>
+  </section>
+
+  <!-- Image Slider -->
+  <section class="slider-section">
+    <div class="container">
+      <div class="slider-container">
+        <div class="image-slider">
+          
+          <div class="slide">
+            <img src="/api/placeholder/1200/500" alt="Team Foto 1">
+          </div>
+          <div class="slide">
+            <img src="/api/placeholder/1200/500" alt="Team Foto 2">
+          </div>
+          <div class="slide">
+            <img src="/api/placeholder/1200/500" alt="Büro Standort">
+          </div>
+          <div class="slide">
+            <img src="/api/placeholder/1200/500" alt="Werkstatt Einblick">
+          </div>
+          <div class="slide">
+            <img src="/api/placeholder/1200/500" alt="Projekttreffen">
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-arrow prev-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-arrow next-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="slider-dots"></div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card animate-in">
+          <img src="/api/placeholder/400/300" alt="Unsere Geschichte">
+          <div class="info-content">
+            <h3>Unsere Geschichte</h3>
+            <p>Von der kleinen Garagenidee zum starken Partner für CNC-Fertigung und 3D-Druck: Ein Blick auf unsere Entwicklung.</p>
+            <a href="#" class="info-link">Mehr erfahren <span>&rarr;</span></a>
+          </div>
+        </div>
+        
+        <div class="info-card animate-in delay-1">
+          <img src="/api/placeholder/400/300" alt="Unsere Werte">
+          <div class="info-content">
+            <h3>Unsere Werte</h3>
+            <p>Innovation, Nachhaltigkeit und Teamgeist prägen unsere tägliche Arbeit.</p>
+            <a href="#" class="info-link">Mehr erfahren <span>&rarr;</span></a>
+          </div>
+        </div>
+        
+        <div class="info-card animate-in delay-2">
+          <img src="/api/placeholder/400/300" alt="Unsere Vision">
+          <div class="info-content">
+            <h3>Unsere Vision</h3>
+            <p>Wir glauben an die Zukunft von additiver Fertigung und zerspanenden Technologien für alle Branchen.</p>
+            <a href="#" class="info-link">Mehr erfahren <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Kontakt</h3>
+          <p>info@example.com<br>+49 123 456789<br>Grüne Straße 5, Berlin</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Impressum</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Datenschutz</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> AGB</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Engineering Solutions. Alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS (gemeinsamer Slider-Code z. B. common_slider.js) -->
+  <script src="{{ url_for('static', filename='js/common_slider.js') }}" defer></script> 
+</body>
+</html>

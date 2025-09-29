@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webseite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+    <style> 
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* iPhone-Schrift */
+    }
+
+
+    
+    h1 {
+        font-size: 72px; /* Schriftgröße erhöhen */
+        text-align: left; /* Links ausrichten */
+        margin-left: 40px; /* Abstand vom linken Rand */
+        color: #000; /* Farbe anpassen, falls nötig */
+    } 
+    .text-right {
+            position: absolute;
+            right: 40px; /* Abstand vom rechten Rand */
+            top: 420px; /* Abstand von oben */
+            text-align: right; /* Text rechts ausrichten */
+            line-height: 1; /* Zeilenhöhe, um die Texte nah beieinander zu platzieren */
+        }
+
+        .text-right span {
+            display: block; /* Zeilenumbruch erzwingen */
+        }
+
+        .text-right .line-1 {
+            font-size: 30px; /* Schriftgröße für die erste Zeile */
+        }
+
+        .text-right .line-2 {
+            font-size: 30px; /* Schriftgröße für die zweite Zeile */
+        }
+
+        .module-title {             /* Text "Module" */
+            font-size: 72px; /* Gleiche Größe wie "Drehen" */
+            text-align: left; /* Links ausgerichtet */
+            margin-left: 40px; /* Gleicher Abstand wie bei "Drehen" */
+            color: #000; /* Gleiche Farbe */
+            padding: 50px 0 0 40px;
+        }
+
+        .module-title1 {             /* Text "Module" */
+            font-size: 72px; /* Gleiche Größe wie "Drehen" */
+            text-align: left; /* Links ausgerichtet */
+            color: #000; /* Gleiche Farbe */
+            margin-top: -50px;
+        }
+    
+    </style>
+
+<title>Video unterhalb</title>
+<style>
+   
+   body {
+        margin: 0;
+    }
+
+        .video-container {
+            width: 100%; /* Nimmt die gesamte verfügbare Breite ein */
+    max-width: 100%; /* Begrenze die Breite */
+    aspect-ratio: 16 / 9; /* Seitenverhältnis 16:9 */
+    margin: 0 auto; /* Zentriert den Container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+            
+        }
+
+        video {
+            width: 100%;   
+            height: 100%;
+            object-fit: cover; /* Schneidet das Video zu, damit es perfekt passt */
+        }
+</style>
+    
+<body>
+
+
+    
+    <title>Grauer Hintergrund</title>
+    <header>
+        <nav>
+          <a href="{{ url_for('home') }}" class="nav-item">
+            Home
+            <br>
+            <img src="{{ url_for('static', filename='images/LogoHome.png') }}" alt="Logo Home" class="home-logo">
+          </a>
+          <a href="{{ url_for('wifi_projekte') }}" class="nav-item">
+            WIFI-Projekte
+            <br>
+            <img src="{{ url_for('static', filename='images/LogoWifi.png') }}" alt="Logo Wifi" class="wifi-logo">
+          </a>
+          <a href="{{ url_for('cad_info') }}" class="nav-item">
+            CAD-Projekte
+            <br>
+            <img src="{{ url_for('static', filename='images/LogoCad.png') }}" alt="Logo CAD" class="cad-logo">
+          </a>
+          <a href="{{ url_for('Drei_D_Druck_Projekte') }}" class="nav-item">
+            3-D Druck
+            <br>
+            <img src="{{ url_for('static', filename='images/LogoDrei_D.png') }}" alt="Logo 3-D Druck" class="drei_d-logo">
+          </a>
+          <a href="{{ url_for('smartlab_info') }}" class="nav-item">
+            Smart-Lab
+            <br>
+            <img src="{{ url_for('static', filename='images/LogoImpressum_Ai.png') }}" alt="Logo Impressum Ai" class="impressum_ai-logo">
+          </a>
+          <a href="{{ url_for('ai_assistent_info') }}" class="nav-item">
+            AI
+            <br>
+            <img src="{{ url_for('static', filename='images/LogoAI.png') }}" alt="Logo AI" class="ai-logo">
+          </a>
+          <a href="{{ url_for('ueber_uns_info') }}" class="nav-item">
+            Über uns
+            <br>
+            <img src="{{ url_for('static', filename='images/LogoÜber_Uns.png') }}" alt="Logo Über Uns" class="über_uns-logo">
+          </a>
+
+        </nav>
+      </header>
+      
+
+    
+
+    <section class="logo-section">
+        <img src="{{ url_for('static', filename='images/Logonr1.png') }}" alt="Symbol" id="Logonr1">
+    </section>
+    
+    <!-- Hier mit SECTIONS arbeiten statt Header, weil sonst graue Farbe oben das Logo mit übernimmt,
+     da Logo auch im Header ist. Section einmal ganz oben einfügen und Section dann unten iwo zu machen, gerade unter "von Schülern"-->
+<section class="content">       
+      <br><br>
+    <h1>Drehen</h1> 
+
+
+    <div class="text-right">
+        <span class="line-1">Von Schülern,</span>
+        <span class="line-2">für Schüler.</span>
+    </div>
+
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="static/videos/video12.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+        <div>
+
+</section>
+
+<h2 class="module-title">Module</h2> <!-- Der Titel "Module" -->
+
+<!-- Obere Zeile: 4 Modals -->
+<section class="horizontal-scroll top-row">
+  <div class="scroll-container centered">
+    <div class="scroll-item" onclick="openModal(0)">
+      <img src="static/images/bild1.jpg" alt="Bild 1">
+      <h3>Drehen</h3>
+      <p>Rotationssymmetrisch.</p>
+    </div>
+    <div class="scroll-item" onclick="openModal(1)">
+      <img src="static/images/bild2.jpg" alt="Bild 2">
+      <h3>Fräsen</h3>
+      <p>Zerspanend.</p>
+    </div>
+    <div class="scroll-item" onclick="openModal(2)">
+      <img src="static/images/bild3.jpg" alt="Bild 3">
+      <h3>3D-Druck</h3>
+      <p>Schichtweise. Innovativ. Experimentell.</p>
+    </div>
+    <div class="scroll-item" onclick="openModal(3)">
+      <img src="static/images/bild4.jpg" alt="Bild 4">
+      <h3>CAD</h3>
+      <p>Präzision. Effizienz. Detail.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Untere Zeile: 4 Modals -->
+<section class="horizontal-scroll bottom-row">
+  <div class="scroll-container centered">
+    <div class="scroll-item" onclick="openModal(7)">
+      <img src="static/images/bild6.jpg" alt="Bild 8">
+      <h3>Lasertechnik</h3>
+      <p>High-Tech, präzise Lasertechnik.</p>
+    </div>
+    <div class="scroll-item" onclick="openModal(5)">
+      <img src="static/images/bild7.jpg" alt="Bild 6">
+      <h3>AI-Assistent</h3>
+      <p>Unser AI Chat-Assistent.</p>
+    </div>
+    <div class="scroll-item" onclick="openModal(6)">
+      <img src="static/images/bild8.png" alt="Bild 7">
+      <h3>CAE</h3>
+      <p>Simulation & Analyse.</p>
+    </div>
+    <div class="scroll-item" onclick="openModal(4)">
+      <img src="static/images/bild5.jpg" alt="Bild 5">
+      <h3>Über uns</h3>
+      <p>Unsere Vision.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-body">
+      <!-- Bild-Spalte -->
+      <div class="modal-image">
+        <img id="modal-image" src="" alt="Modal Image">
+      </div>
+      <!-- Container für Textboxen -->
+      <div class="modal-text-container">
+        <div class="modal-text" id="modal-text1">
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+        </div>
+        <div class="modal-text" id="modal-text2">
+          <p id="modal-additional"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Container für die beiden klickbaren Links -->
+    <div class="modal-links">
+      <a href="#" id="more-info-link" class="modal-link">Mehr Informationen</a>
+      <a href="#" id="projects-link" class="modal-link">Zu den Projekten</a>
+    </div>
+  </div>
+</div>
+
+
+<br> <br> <br> <br> <br> <br> <br> <br> 
+
+
+        <!-- JavaScript einbinden -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Über uns</h3>
+          <p>Wir sind vier Schüler der 4aWM-2024/25, die im Rahmen der 5 jährigen "Industrial Engineering and Management" Ausbildung an der HTL Dornbirn reichlich an Fachkenntnissen gesammelt haben und diese in diesem Projekt anwenden.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Leistungen</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> CNC Fräsen</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> CNC Drehen</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> CAD Design</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> 3D Druck</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Prototyping</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Kontakt</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-envelope"></i> mehmet.saygin@student.htldornbirn.com</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> +43 999 99999</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Höchsterstraße 73, 6850 Dornbirn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        2025 Mechanical Engineering HTLDO Students Group.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

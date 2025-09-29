@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fräsen und Drehen | Engineering Solutions</title>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/drehen_info.css') }}"> 
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="{{ url_for('static', filename='images/LogoWifi.png') }}" alt="Logo">
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Projekte</a>
+            <a href="#">Weiteres</a>
+            <a href="#" class="active">Info</a>
+          </div>
+        </div>
+        <div class="search-container">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Nach Schwerpunkten suchen">
+          </div>
+          <button class="shop-btn">AI-Assistent</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Drehen</h1>
+      <p>Innovative Lösungen für Drehprozesse mit modernster Technologie und höchster Präzision</p>
+      <a href="#" class="hero-btn">Mehr entdecken</a>
+    </div>
+  </section>
+
+  <!-- Image Slider -->
+  <section class="slider-section">
+    <div class="container">
+      <div class="slider-container">
+        <div class="image-slider">
+          <div class="slide">
+            <img src="{{ url_for('static', filename='images/bild1.jpg') }}" alt="Fräsen Beispiel 1">
+          </div>
+          <div class="slide">
+            <img src="{{ url_for('static', filename='images/bild2.jpg') }}" alt="Fräsen Beispiel 2">
+          </div>
+          <div class="slide">
+            <img src="{{ url_for('static', filename='images/bild3.jpg') }}" alt="Drehen Beispiel 1">
+          </div>
+          <div class="slide">
+            <img src="{{ url_for('static', filename='images/bild4.jpg') }}" alt="Drehen Beispiel 2">
+          </div>
+          <div class="slide">
+            <img src="{{ url_for('static', filename='images/bild5.jpg') }}" alt="CNC Maschine">
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-arrow prev-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-arrow next-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="slider-dots"></div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card animate-in">
+          <img src="{{ url_for('static', filename='images/pexels1.jpg') }}" alt="CNC Fräsen">
+          <div class="info-content">
+            <h3>CNC Drehen</h3>
+            <p>Modernste CNC-Fräsmaschinen ermöglichen höchste Präzision und Effizienz bei der Bearbeitung verschiedenster Materialien.</p>
+            <a href="#" class="info-link">Mehr erfahren <span>&rarr;</span></a>
+          </div>
+        </div>
+        
+        <div class="info-card animate-in delay-1">
+          <img src="{{ url_for('static', filename='images/pexels2.jpg') }}" alt="Drehbearbeitung">
+          <div class="info-content">
+            <h3>Manuell Drehen</h3>
+            <p>Präzise Drehbearbeitung für Bauteile mit höchsten Anforderungen an Maßhaltigkeit und Oberflächengüte.</p>
+            <a href="#" class="info-link">Mehr erfahren <span>&rarr;</span></a>
+          </div>
+        </div>
+        
+        <div class="info-card animate-in delay-2">
+          <img src="{{ url_for('static', filename='images/pexels3.jpg') }}" alt="Materialauswahl">
+          <div class="info-content">
+            <h3>Materialauswahl</h3>
+            <p>Von Aluminium über Stahl bis hin zu Spezialkunststoffen - wir bearbeiten eine Vielzahl von Materialien nach Ihren Anforderungen.</p>
+            <a href="#" class="info-link">Mehr erfahren <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Über uns</h3>
+          <p>Wir sind vier Schüler der 4aWM-2024/25, die im Rahmen der 5 jährigen "Industrial Engineering and Management" Ausbildung an der HTL Dornbirn reichlich an Fachkenntnissen gesammelt haben und diese in diesem Projekt anwenden.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Schwerpunkte</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> CNC Fräsen</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> CNC Drehen</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> CAD Design</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> 3D Druck</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Prototyping</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Kontakt</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-envelope"></i> mehmet.saygin@student.htldornbirn.com</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> +43 999 99999</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Höchsterstraße 73, 6850 Dornbirn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        2025 Mechanical Engineering HTLDO Students Group.
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="{{ url_for('static', filename='js/drehen_info.js') }}" defer></script> 
+
+</body>
+</html>
